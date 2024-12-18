@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row-reverse;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .recommended-tag {
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-column {
+            flex: 1;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-column {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .price-column {
+            flex: 1;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #004080;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .free-cancel {
+            color: green;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .taxes {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0078ff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        
+        <div class="image-column">
+            <img src="images/2347712.jpg" alt="Hotel Image">
+        </div>
+
+        
+        <div class="content-column">
+            <div class="title">فندق قصر الأنصار جولدن توليب ⭐⭐⭐⭐</div>
+            <div class="recommended-tag">Recommended for your group</div>
+            <div class="details">
+                جناح ثلاث غرف نوم مع حمامين<br>
+                جناح خاص • 3 غرف • 2 حمام • 60م² • 9 أسرة فردية
+            </div>
+            <div class="free-cancel">✓ إلغاء مجاني</div>
+        </div>
+
+        <div class="price-column" style="background-color: #fff;">
+            <div class="price" style="color: inherit;">SAR 999</div>
+            <div class="taxes" style="color: inherit;">+ SAR 99 رسوم وضرائب</div>
+            <a href="#" class="button" style="background-color: #1e0feb73; color: inherit; border: 1px solid #04f7d6;">تحقق من التوفر</a>
+        </div>
+    </div>
+
+   
+    <div class="card">
+        
+        <div class="image-column">
+            <img src="images/—Pngtree—five  hotel vector design_5326460.png" alt="Hotel Image">
+        </div>
+
+        
+        <div class="content-column">
+            <div class="title">فندق قصر الأنصر توليب ⭐⭐⭐⭐⭐</div>
+            <div class="recommended-tag">Recommended for your group</div>
+            <div class="details">
+                جناح سبع غرف نوم مع حمامين<br>
+                جناح خاص • 9 غرف • 5 حمام • 120م² • 14 أسرة فردية
+            </div>
+            <div class="free-cancel">✓ إلغاء مجاني</div>
+        </div>
+
+       
+        <div class="price-column" style="background-color: #fff;">
+            <div class="price" style="color: inherit;">SAR 9,999</div>
+            <div class="taxes" style="color: inherit;">+ SAR 999 رسوم وضرائب</div>
+            <a href="#" class="button" style="background-color: #1e0feb73; color: inherit; border: 1px solid #04f5fd;">تحقق من التوفر</a>
+        </div>
+    </div>
+</body>
+</html>
